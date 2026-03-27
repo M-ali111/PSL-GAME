@@ -9,7 +9,17 @@
       "created_at": "2026-03-27T06:16:24.051Z"
     }
   ],
-  "predictions": [],
+  "predictions": [
+    {
+      "username": "Ali",
+      "match_id": 2,
+      "winner": "Karachi Kings",
+      "man_of_match": "Warnwr",
+      "top_batsman": "Warber",
+      "top_bowler": "Zampa",
+      "created_at": "2026-03-27T06:27:57.056Z"
+    }
+  ],
   "result_overrides": {
     "1": {
       "status": "finished",
