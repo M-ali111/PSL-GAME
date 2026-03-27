@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSL 2026 Predictor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-bg"></div>
+    <main class="app-shell">
+      <header class="app-header">
+        <h1>PSL 2026 Predictor</h1>
+        <a class="top-link" href="#leaderboardSection">Points Table</a>
+      </header>
+
+      <section id="statusBar" class="status-bar hidden" aria-live="polite"></section>
+
+      <section id="userSetupCard" class="card setup-card">
+        <h2>Choose Your Username</h2>
+        <p class="muted">Enter your username to login, or create a new one.</p>
+        <form id="usernameForm" class="stack">
+          <input
+            id="usernameInput"
+            name="username"
+            type="text"
+            maxlength="20"
+            placeholder="Enter your username"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn-primary">Continue</button>
+        </form>
+      </section>
+
+      <section id="appView" class="hidden">
+        <section class="section-block">
+          <div class="section-title-row">
+            <div>
+              <h2>Matches</h2>
+              <p class="section-note">Each correct prediction gives 2 points.</p>
+            </div>
+            <div class="top-actions">
+              <span id="loadingText" class="loading-text">Idle</span>
+              <button id="switchUserButton" class="btn-ghost" type="button">Switch User</button>
+            </div>
+          </div>
+          <div id="matchFilters" class="filter-row" role="tablist" aria-label="Match filters">
+            <button class="filter-chip active" type="button" data-filter="today">Today</button>
+            <button class="filter-chip" type="button" data-filter="upcoming">Upcoming</button>
+            <button class="filter-chip" type="button" data-filter="finished">Finished</button>
+            <button class="filter-chip" type="button" data-filter="all">All</button>
+          </div>
+          <div id="matchesContainer" class="match-grid"></div>
+        </section>
+
+        <section id="leaderboardSection" class="section-block">
+          <div class="section-title-row">
+            <div>
+              <h2>Points Table</h2>
+              <p class="section-note">Sorted by total points, then username.</p>
+            </div>
+          </div>
+          <div class="table-wrap card">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>User</th>
+                  <th>Points</th>
+                  <th>Total Predictions</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboardBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
