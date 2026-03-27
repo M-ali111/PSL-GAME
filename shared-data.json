@@ -48,6 +48,17 @@
       },
       "updated_at": "2026-03-27T06:17:01.277Z",
       "updated_by": "Ali J"
+    },
+    "2": {
+      "status": "finished",
+      "result": {
+        "winner": "Karachi Kings",
+        "man_of_match": "Karachi",
+        "top_batsman": "Karachi",
+        "top_bowler": "Karachi"
+      },
+      "updated_at": "2026-03-27T17:28:02.498Z",
+      "updated_by": "Ali"
     }
   }
 }
