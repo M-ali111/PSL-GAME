@@ -1,5 +1,10 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "Ali",
+      "created_at": "2026-03-27T06:16:20.212Z"
+    }
+  ],
   "predictions": [],
   "result_overrides": {}
 }
