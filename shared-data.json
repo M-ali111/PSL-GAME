@@ -10,5 +10,17 @@
     }
   ],
   "predictions": [],
-  "result_overrides": {}
+  "result_overrides": {
+    "1": {
+      "status": "finished",
+      "result": {
+        "winner": "Lahore Qalandars",
+        "man_of_match": "Shaheen Afridi",
+        "top_batsman": "Fakhar Zaman",
+        "top_bowler": "Sikandar Raza"
+      },
+      "updated_at": "2026-03-27T06:17:01.277Z",
+      "updated_by": "Ali J"
+    }
+  }
 }
